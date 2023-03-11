@@ -9,10 +9,12 @@ function applyTheme() {
     document.body.classList.add("dark");
     document.querySelector(".logo").src = "./assets/logo-dark.png";
     themeToggler.querySelector(".icon").classList.replace("fa-sun", "fa-moon");
+    document.querySelector(".landing").classList.add("text-white");
   } else {
     document.body.classList.remove("dark");
     document.querySelector(".logo").src = "./assets/logo.png";
     themeToggler.querySelector(".icon").classList.replace("fa-moon", "fa-sun");
+    document.querySelector(".landing").classList.remove("text-white");
   }
 }
 
