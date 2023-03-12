@@ -1,6 +1,8 @@
 :root {
   --main-bg-color: #fff;
   --dark-bg-color: #1f2830;
+  /* --dark-bg-color: #0b2132; */
+  /* --dark-bg-color: #031929; */
   --main-color: #028afe;
   --hover-color: #0d6efd;
 }
@@ -11,6 +13,20 @@ html {
 
 .dark {
   background-color: var(--dark-bg-color);
+}
+
+h1 {
+  font-size: calc(1.5rem + 1.5vw);
+}
+h2 {
+  font-size: calc(1.35rem + 0.9vw);
+}
+h3 {
+  font-size: calc(1.32rem + 0.6vw);
+}
+
+p {
+  opacity: 0.65;
 }
 
 .main-btn {
@@ -98,4 +114,19 @@ html {
 .theme-toggler.active,
 .theme-toggler:hover {
   color: var(--hover-color);
+}
+
+/* about */
+.about .wrapper img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.about span.identifier {
+  opacity: 0.65;
+  font-size: 0.9rem;
 }
