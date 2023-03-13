@@ -117,15 +117,6 @@ p {
 }
 
 /* about */
-.about .wrapper img {
-  width: 100%;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
 .about span.identifier {
   opacity: 0.65;
   font-size: 0.9rem;
