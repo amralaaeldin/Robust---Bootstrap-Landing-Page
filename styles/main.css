@@ -130,7 +130,7 @@ span.identifier {
 }
 
 .reviews .overlay {
-  background-color: #000;
+  background-color: var(--dark-bg-color);
   opacity: 0.85;
 }
 
