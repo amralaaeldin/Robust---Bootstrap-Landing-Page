@@ -29,6 +29,11 @@ p {
   opacity: 0.65;
 }
 
+span.identifier {
+  opacity: 0.65;
+  font-size: 0.9rem;
+}
+
 .main-btn {
   color: #fff;
   background-color: var(--main-color);
@@ -117,7 +122,79 @@ p {
 }
 
 /* about */
-.about span.identifier {
-  opacity: 0.65;
-  font-size: 0.9rem;
+
+/* reviews */
+.reviews {
+  background-image: url("./../assets/jan-kopriva-IfHAeNOOGQ0-unsplash.jpg");
+  background-size: cover;
+}
+
+.reviews .overlay {
+  background-color: #000;
+  opacity: 0.85;
+}
+
+.reviews .advantages .advantage-item {
+  width: 100px;
+  background-color: rgb(0, 0, 0, 0.35);
+}
+
+.reviews .advantages .advantage-item .icon {
+  font-size: 50px;
+  color: #fff;
+}
+
+.reviews .advantages > .flex-column:nth-of-type(even) {
+  margin-top: 80px;
+}
+
+.reviews .advantages .advantage-item .title {
+  font-size: 0.65rem;
+  margin-bottom: -15px;
+  color: var(--main-color);
+}
+
+.reviews .advantages .advantage-item .number {
+  font-size: 3rem;
+}
+
+.reviews .carousel-item p {
+  opacity: 1;
+}
+
+.reviews .carousel-item .profile .profile-picture {
+  width: 50px;
+}
+
+.reviews .carousel-control {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+
+.reviews .carousel-inner .carousel-item p {
+  height: 11rem;
+  overflow: scroll;
+}
+
+.reviews .carousel-control.carousel-control-prev {
+  background-color: rgb(255, 255, 255, 0.85);
+  color: #000;
+}
+
+.reviews .carousel-control.carousel-control-prev:hover {
+  background-color: rgb(255, 255, 255, 1);
+}
+
+.reviews .carousel-control.carousel-control-next {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.reviews .carousel-control.carousel-control-next:hover {
+  background-color: var(--hover-color);
+}
+
+.reviews .carousel-control .icon {
+  font-size: 15px;
 }
