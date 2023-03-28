@@ -1,10 +1,10 @@
 :root {
-  --main-bg-color: #fff;
-  --dark-bg-color: #1f2830;
+  --main-bg-color: rgb(255, 255, 255);
+  --dark-bg-color: rgb(31, 40, 48);
   /* --dark-bg-color: #0b2132; */
   /* --dark-bg-color: #031929; */
-  --main-color: #028afe;
-  --hover-color: #0d6efd;
+  --main-color: rgb(2, 138, 254);
+  --hover-color: rgb(13, 110, 253);
 }
 
 html {
@@ -145,6 +145,8 @@ span.identifier {
 .reviews .advantages .advantage-item {
   width: 100px;
   background-color: rgb(0, 0, 0, 0.35);
+  overflow: hidden;
+  height: 242.5px;
 }
 
 .reviews .advantages .advantage-item .icon {
@@ -164,6 +166,39 @@ span.identifier {
 
 .reviews .advantages .advantage-item .number {
   font-size: 3rem;
+}
+
+/* hover */
+.reviews .advantages .advantage-item .overlay-image {
+  left: -100%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
+.reviews .advantages .advantage-item:hover .overlay-image {
+  background-image: linear-gradient(
+    135deg,
+    rgba(2, 138, 254),
+    rgba(13, 110, 253)
+  );
+  left: 0;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  opacity: 0.5;
+}
+
+.reviews .advantages .advantage-item .overlay-image img {
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .reviews .carousel-item p {
