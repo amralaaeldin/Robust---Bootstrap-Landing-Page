@@ -259,3 +259,33 @@ span.identifier {
 .reviews .carousel-control .icon {
   font-size: 15px;
 }
+
+/* accordion */
+.accordion .accordion-item,
+.accordion .accordion-header button {
+  background-color: transparent;
+}
+
+.accordion .accordion-header button:focus,
+.accordion .accordion-header button:active {
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(13, 110, 253, 0.9);
+  color: #fff;
+}
+
+.accordion .accordion-header button::after {
+  background-image: none;
+  font-family: "FontAwesome";
+  content: "\f107";
+  color: var(--main-color);
+}
+
+.accordion .accordion-header button:focus::after,
+.accordion .accordion-header button:active::after {
+  color: #fff;
+}
+
+.accordion .accordion-body {
+  background-color: rgba(2, 138, 254, 0.07);
+}
