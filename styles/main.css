@@ -131,6 +131,17 @@ span.identifier {
   max-width: 540px;
 }
 
+.about .features.row article .icon {
+  font-size: 1.5rem;
+  left: -33px;
+  color: var(--hover-color);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
 /* reviews */
 .reviews {
   background-image: url("./../assets/jan-kopriva-IfHAeNOOGQ0-unsplash.jpg");
