@@ -168,7 +168,16 @@ span.identifier {
   font-size: 3rem;
 }
 
-/* hover */
+.reviews .advantages .advantage-item:hover .title {
+  color: #fff;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background-color: var(--hover-color);
+}
+
 .reviews .advantages .advantage-item .overlay-image {
   left: -100%;
   transition: 0.5s ease-in-out;
