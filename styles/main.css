@@ -25,10 +25,6 @@ h3 {
   font-size: calc(1.32rem + 0.6vw);
 }
 
-p {
-  opacity: 0.65;
-}
-
 span.identifier {
   opacity: 0.65;
   font-size: 0.9rem;
@@ -67,9 +63,9 @@ span.identifier {
 }
 
 .navbar .nav-link {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .navbar .nav-link.active,
@@ -303,4 +299,27 @@ span.identifier {
 
 .accordion .accordion-body {
   background-color: rgba(2, 138, 254, 0.07);
+}
+
+/* footer */
+footer {
+  margin-top: 4rem;
+}
+
+footer .nav-link.social {
+  font-size: 20px;
+}
+
+footer .copyright a {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+footer .nav .nav-link.active,
+footer .nav .nav-link:focus,
+footer .nav .nav-link:hover,
+footer .name:active,
+footer .name:focus,
+footer .name:hover {
+  color: var(--main-color) !important;
 }
