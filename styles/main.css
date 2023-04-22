@@ -191,11 +191,11 @@ span.identifier {
 
 .reviews .advantages .advantage-item .overlay-image {
   left: -100%;
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
 }
 
 .reviews .advantages .advantage-item:hover .overlay-image {
@@ -205,11 +205,11 @@ span.identifier {
     rgba(13, 110, 253)
   );
   left: 0;
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
   opacity: 0.5;
 }
 
@@ -275,6 +275,10 @@ span.identifier {
 .accordion .accordion-item,
 .accordion .accordion-header button {
   background-color: transparent;
+}
+
+.accordion .accordion-item {
+  max-width: 825px;
 }
 
 .accordion .accordion-header button:focus,
