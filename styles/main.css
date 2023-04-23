@@ -129,7 +129,7 @@ span.identifier {
 
 .about .features.row article .icon {
   font-size: 1.3rem;
-  left: -33px;
+  left: -1.5rem;
   color: var(--hover-color);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
