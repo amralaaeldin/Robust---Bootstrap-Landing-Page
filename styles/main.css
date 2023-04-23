@@ -15,6 +15,15 @@ html {
   background-color: var(--dark-bg-color);
 }
 
+body {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  width: fit-content;
+}
+
 h1 {
   font-size: calc(1.5rem + 1.5vw);
 }
@@ -299,6 +308,44 @@ span.identifier {
 
 .accordion .accordion-body {
   background-color: rgba(2, 138, 254, 0.07);
+}
+
+/* customers */
+.customers .brands .brand {
+  max-width: 13rem;
+}
+
+.customers .brands .brand img {
+  opacity: 0.7;
+  filter: contrast(40%);
+  -webkit-filter: contrast(40%);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.customers .brands .brand img:hover {
+  opacity: 1;
+  filter: contrast(100%);
+  -webkit-filter: contrast(100%);
+}
+
+.dark .customers .brands .brand img {
+  filter: contrast(0%);
+  -webkit-filter: contrast(0%);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.dark .customers .brands .brand img:hover {
+  opacity: 1;
+  filter: contrast(100%) invert(100%);
+  -webkit-filter: contrast(100%) invert(100%);
 }
 
 /* footer */

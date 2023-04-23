@@ -14,6 +14,7 @@ function applyTheme() {
     document.querySelector(".landing").classList.add("text-white");
     document.querySelector(".about").classList.add("text-white");
     document.querySelector(".faq.accordion").classList.add("text-white");
+    document.querySelector(".customers").classList.add("text-white");
     document
       .querySelectorAll(".faq.accordion .accordion-header button")
       .forEach((item) => item.classList.add("text-white"));
@@ -31,6 +32,7 @@ function applyTheme() {
     document.querySelector(".landing").classList.remove("text-white");
     document.querySelector(".about").classList.remove("text-white");
     document.querySelector(".faq.accordion").classList.remove("text-white");
+    document.querySelector(".customers").classList.remove("text-white");
     document
       .querySelectorAll(".faq.accordion .accordion-header button")
       .forEach((item) => item.classList.remove("text-white"));
