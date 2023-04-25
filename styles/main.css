@@ -1,6 +1,8 @@
 :root {
   --main-bg-color: rgb(255, 255, 255);
   --dark-bg-color: rgb(31, 40, 48);
+  --secondary-bg-color: rgb(247, 251, 255);
+  --dark-secondary-bg-color: rgb(41, 52, 62);
   /* --dark-bg-color: #0b2132; */
   /* --dark-bg-color: #031929; */
   --main-color: rgb(2, 138, 254);
@@ -277,6 +279,14 @@ span.identifier {
 }
 
 /* accordion */
+.accordion {
+  background-color: var(--secondary-bg-color);
+}
+
+.dark .accordion {
+  background-color: var(--dark-secondary-bg-color);
+}
+
 .accordion .accordion-item,
 .accordion .accordion-header button {
   background-color: transparent;
@@ -311,6 +321,16 @@ span.identifier {
 }
 
 /* customers */
+.customers {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 5rem;
+  margin-bottom: -1.5rem;
+}
+
+.dark .customers {
+  background-color: var(--dark-secondary-bg-color);
+}
+
 .customers .brands .brand {
   max-width: 13rem;
 }
@@ -349,8 +369,12 @@ span.identifier {
 }
 
 /* footer */
-footer {
-  margin-top: 5rem;
+footer .wave {
+  background-color: var(--secondary-bg-color);
+}
+
+.dark footer .wave {
+  background-color: var(--dark-secondary-bg-color);
 }
 
 footer .nav-link.social {

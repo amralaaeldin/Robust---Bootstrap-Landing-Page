@@ -10,6 +10,7 @@ function applyTheme() {
     document.querySelectorAll(".logo").forEach((item) => {
       item.src = "./assets/logo-dark.png";
     });
+    document.querySelector(".wave").src = "./assets/wave-dark.png";
     themeToggler.querySelector(".icon").classList.replace("fa-moon", "fa-sun");
     document.querySelector(".landing").classList.add("text-white");
     document.querySelector(".about").classList.add("text-white");
@@ -28,6 +29,7 @@ function applyTheme() {
     document.querySelectorAll(".logo").forEach((item) => {
       item.src = "./assets/logo.png";
     });
+    document.querySelector(".wave").src = "./assets/wave.png";
     themeToggler.querySelector(".icon").classList.replace("fa-sun", "fa-moon");
     document.querySelector(".landing").classList.remove("text-white");
     document.querySelector(".about").classList.remove("text-white");
