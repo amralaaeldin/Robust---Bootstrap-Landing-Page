@@ -14,6 +14,7 @@ function applyTheme() {
     themeToggler.querySelector(".icon").classList.replace("fa-moon", "fa-sun");
     document.querySelector(".landing").classList.add("text-white");
     document.querySelector(".about").classList.add("text-white");
+    document.querySelector(".contact").classList.add("text-white");
     document.querySelector(".faq.accordion").classList.add("text-white");
     document.querySelector(".customers").classList.add("text-white");
     document
@@ -33,6 +34,7 @@ function applyTheme() {
     themeToggler.querySelector(".icon").classList.replace("fa-sun", "fa-moon");
     document.querySelector(".landing").classList.remove("text-white");
     document.querySelector(".about").classList.remove("text-white");
+    document.querySelector(".contact").classList.remove("text-white");
     document.querySelector(".faq.accordion").classList.remove("text-white");
     document.querySelector(".customers").classList.remove("text-white");
     document
@@ -53,4 +55,17 @@ themeToggler.addEventListener("click", () => {
     localStorage.setItem("dark-theme", 0);
   }
   applyTheme();
+});
+
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const form = document.getElementById("contact-form");
+  form.reset();
+  form.classList.add("success");
+  form.querySelector('.btn[type="submit"]').innerHTML =
+    "<i class='tick fa-solid fa-circle-check position-absolute'></i>Message Sent";
+});
+
+document.getElementById("desctiption").addEventListener("focus", () => {
+  document.getElementById("contact-form").classList.remove("success");
 });

@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: rgb(255, 255, 255);
   --dark-bg-color: rgb(31, 40, 48);
-  --secondary-bg-color: rgb(247, 251, 255);
+  --secondary-bg-color: rgb(243 249 255);
   --dark-secondary-bg-color: rgb(41, 52, 62);
   /* --dark-bg-color: #0b2132; */
   /* --dark-bg-color: #031929; */
@@ -276,6 +276,48 @@ span.identifier {
 
 .reviews .carousel-control .icon {
   font-size: 15px;
+}
+
+/* contact */
+.contact form {
+  max-width: 650px;
+}
+
+@media screen and (min-width: 400px) {
+  .contact form {
+    min-width: 350px;
+  }
+}
+.contact form {
+  max-width: 650px;
+}
+
+.contact form .btn {
+  height: 44px;
+}
+
+.contact form .btn .tick {
+  display: none;
+}
+
+.contact form.success .btn[type="submit"] {
+  background-color: rgb(19, 149, 47);
+}
+
+.contact form.success .btn[type="submit"] .tick {
+  display: block;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 15px;
+}
+
+.contact figure.map iframe {
+  margin-top: -4.2rem;
 }
 
 /* accordion */
