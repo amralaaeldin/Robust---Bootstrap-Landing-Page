@@ -66,6 +66,15 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
     "<i class='tick fa-solid fa-circle-check position-absolute'></i>Message Sent";
 });
 
-document.getElementById("desctiption").addEventListener("focus", () => {
+const formDescriptionTextarea = document.getElementById("desctiption");
+
+formDescriptionTextarea.addEventListener("focus", () => {
   document.getElementById("contact-form").classList.remove("success");
+});
+
+formDescriptionTextarea.addEventListener("input", () => {
+  formDescriptionTextarea.style.height = "auto";
+  formDescriptionTextarea.style.height = `${
+    formDescriptionTextarea.scrollHeight + 2
+  }px`;
 });

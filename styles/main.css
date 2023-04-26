@@ -292,6 +292,11 @@ span.identifier {
   max-width: 650px;
 }
 
+.contact form textarea {
+  min-height: 85px;
+  max-height: 450px;
+}
+
 .contact form .btn {
   height: 44px;
 }
