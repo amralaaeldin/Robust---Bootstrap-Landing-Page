@@ -432,6 +432,10 @@ footer .copyright a {
   text-decoration: none;
 }
 
+footer .nav .nav-link {
+  padding-left: 0;
+}
+
 footer .nav .nav-link.active,
 footer .nav .nav-link:focus,
 footer .nav .nav-link:hover,
